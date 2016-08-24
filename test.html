@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="This is my site, welcome"/>
+        <meta name="author" content="Randy Keyes"/>
+        
+        <title> Home |  Randy Keyes</title>
+
+        <link rel="author" href="humans.txt"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/feed.xml" />
+
+        <link rel="stylesheet" href="https://npmcdn.com/tachyons@4.1.0/css/tachyons.min.css"/>
+        <link rel="stylesheet" href="file:///Users/randykeyes/Desktop/imrandyk.github.io/css/style.css" />
+        <link rel="stylesheet" href="file:///Users/randykeyes/Desktop/imrandyk.github.io/css/font-awesome.min.css" />
+
+    </head>
+
+    <body class="sans-serif bg-near-white">
+        <nav class="pa3 pa4-ns bg-white">
+            <a class="link orange b f1 f-headline-ns tc db mb3 mb4-ns" href="/" title="Randy Keyes">Randy Keyes</a>
+            <div class="tc pb3">
+                <a class="link dim black f6 f5-ns dib mr3" href="/" title="Home">Home</a>
+                <a class="link dim black f6 f5-ns dib mr3" href="/contact" title="Contact">Contact</a>
+                <a class="link dim black f6 f5-ns dib mr3" href="/archive" title="Archive">Archive</a>
+                <a class="link dim black f6 f5-ns dib" href="/feed.xml" title="RSS Feed">RSS Feed</a>
+            </div>
+        </nav>
+
+        <section class="bt b--black-10 cf">
+            <!-- Show last 5 posts here -->
+            <article class="w-100 bb b--black-10 cf ph3 ph5-ns pv5">
+                <header class="fn fl-ns w-40-ns pr4-ns">
+                    <h1 class="f2 lh-title mb3 mt0 pt3 bt bw1 b--orange normal hide-child">
+                        <a class="link black" href="/meta/2012/03/15/guest-blogs/">
+                            Guest Posts
+                           <span class="f3 child orange"><i class="fa fa-link" aria-hidden="true"></i></span>
+                        </a>
+                    </h1>
+                    <h2 class="f3 mid-gray lh-title normal">
+                        How to quickly create guest blogs with a different author.
+                    </h2>
+                    <time class="f6 ttu tracked gray">Sometime before 1967</time>
+                </header>
+                <div class="fn fl-ns w-60-ns">
+                    <div class="entry">
+                        <p class="f5 lh-copy mt0-ns">
+                            If you want to create a guest post that will appear as if written by another author, simply add an <code class="highlighter-rouge">author</code> attribute to the  YAML header of your blog post. This will be picked up in the template and displayed in the meta-section both on the front page  as well as on the individual post pages.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="w-100 bb b--black-10">
+                <div class="pa3 w-100 mw8 center">
+                    <header>
+                        <h2 class="f2 lh-copy mt0 mb4 measure normal"><a class="link orange" href="/meta/2012/03/15/guest-blogs/">Guest Posts</a></h2>
+                        <span class="date"><i class="icon-clock"></i><time datetime="2012-03-15">Mar 15, 2012</time></span><br/>
+                        <span class="category"><i class="icon-tag"></i> Meta</span><br/>
+                        <span class="author"><i class="icon-user"></i> John Smith</span>
+                    </header>	
+                    <div class="entry">How to quickly create guest blogs with a different author.</div>
+                </div>
+            </article>
+
+            <article class="w-100 bb b--black-10 ">
+                <div class="pa3 w-100 mw8 center">
+                    <header>
+                        <h2 class="f2 lh-copy mt0 mb4 measure normal"><a class="link orange" href="/meta/2012/03/15/guest-blogs/">Guest Posts</a></h2>
+                        <span class="date"><i class="icon-clock"></i><time datetime="2012-03-15">Mar 15, 2012</time></span><br/>
+                        <span class="category"><i class="icon-tag"></i> Meta</span><br/>
+                        <span class="author"><i class="icon-user"></i> John Smith</span>
+                    </header>	
+                    <div class="entry">How to quickly create guest blogs with a different author.</div>
+                </div>
+            </article>
+
+            <article class="w-100 bb b--black-10 ">
+                <div class="pa3 w-100 mw8 center">
+                    <header>
+                        <h2 class="f2 lh-copy mt0 mb4 measure normal"><a class="link orange" href="/meta/2012/03/15/guest-blogs/">Guest Posts</a></h2>
+                        <span class="date"><i class="icon-clock"></i><time datetime="2012-03-15">Mar 15, 2012</time></span><br/>
+                        <span class="category"><i class="icon-tag"></i> Meta</span><br/>
+                        <span class="author"><i class="icon-user"></i> John Smith</span>
+                    </header>	
+                    <div class="entry">How to quickly create guest blogs with a different author.</div>
+                </div>
+            </article>
+        </section>
+
+        <section class="ph3 ph5-ns cf">
+            <div id="paginator">
+                <a href="/page2">&laquo; Older Posts</a>
+            </div>
+        </section>
+
+        <footer>
+            <hr />
+            <p>&copy; <time>2012</time> Randy Keyes</p>
+        </footer>
+
+        <!--<script src="/js/scripts.js"></script>-->
+    </body>
+</html>
