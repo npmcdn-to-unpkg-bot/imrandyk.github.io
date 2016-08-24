@@ -37,6 +37,14 @@ body {
     transition: color .15s ease-in;
 }
 
+.orange {
+    color: #F6511D;
+}
+
+.blue {
+    color: #172A3A;
+}
+
 .black {
     color: #333;
 }
