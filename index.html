@@ -6,7 +6,7 @@ title: Home
 <!-- Show last 5 posts here -->
 {% for page in paginator.posts %}
     {% assign body = page.content %}
-    {% include post.html %}
+    {% include post.html needLink=true %}
 {% endfor %}
 <!--
     {% for post in paginator.posts %}
