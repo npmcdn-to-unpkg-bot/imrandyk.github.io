@@ -18,7 +18,7 @@ To add an icon somewhere in the template simply do:
 
 This will insert a home icon, just as the one seen in the sidebar. The available class names you can use are as follows:
 
-![Available Icons][icons]
+![Available Icons][icons]{: .w-100 }
 
 These should work in all the browsers, all the way down to and including IE7, but not IE6.
 

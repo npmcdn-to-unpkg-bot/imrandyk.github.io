@@ -16,7 +16,7 @@ title: Home
             <h2 class="f3 mid-gray lh-title normal">
                 {{ post.excerpt }}
             </h2>
-            <time class="f6 ttu tracked gray" datetime="{{post.date|date:"%F"}}">{post.date|date:"%b %d, %Y"}}</time>
+            <time class="f6 ttu tracked gray" datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time>
             <span class="category">{{ post.categories | category_links }}</span><br/>
             <span class="author">{% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif%}</span>
         </header>
