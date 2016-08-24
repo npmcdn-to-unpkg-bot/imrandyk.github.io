@@ -4,7 +4,12 @@ title: Home
 ---
 
 <!-- Show last 5 posts here -->
-{% for post in paginator.posts %}
+{% for page in paginator.posts %}
+    {% assign body = page.content %}
+    {% include post.html %}
+{% endfor %}
+<!--
+    {% for post in paginator.posts %}
     <article class="w-100 bb b--black-10 cf ph3 ph5-ns pv5">
         <header class="fn fl-ns w-40-ns pr4-ns">
             <h1 class="f2 lh-title mb3 mt0 pt3 bt bw1 b--orange normal hide-child">
@@ -25,6 +30,7 @@ title: Home
         </div>
 	</article>
 {% endfor %}
+-->
 
 
 <div id="paginator">
