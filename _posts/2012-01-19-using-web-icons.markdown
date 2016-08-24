@@ -1,7 +1,11 @@
 ---
 layout: post
 title: Using the Web Icons
+<<<<<<< HEAD
 category: Design
+=======
+categories: [Design]
+>>>>>>> master
 
 excerpt: Quick overview on how to use the Typicon web font icons included with this template. 
 
