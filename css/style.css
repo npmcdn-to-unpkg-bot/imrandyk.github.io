@@ -1,21 +1,7 @@
-/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
-body {
-    background-color: #fff;
-    font: 13px Helmet, Freesans, sans-serif;
-}
-
 .orange {
     color: #F6511D;
 }
 
-.blue {
-    color: #172A3A;
-}
-
-.black {
-    color: #333;
-}
-
-.gray {
-    color: #eee;
+.b--orange { 
+    border-color:  #F6511D; 
 }
