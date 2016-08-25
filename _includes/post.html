@@ -1,5 +1,5 @@
 <article class="w-100 bb b--black-10 cf ph3 ph5-ns pv5">
-    <header class="fn fl-ns w-40-ns pr4-ns">
+    <header class="fn fl-l w-40-l pr4-ns">
         <h1 class="f2 lh-title mb3 mt0 pt3 bt bw1 b--orange normal hide-child">
           {% if include.needLink == null %}
             {{ page.title }}
@@ -17,7 +17,7 @@
         <span class="category">{{ page.categories | category_links }}</span><br/>
         <span class="author">{% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%}</span>
     </header>
-    <div class="fn fl-ns w-60-ns f5 lh-copy mt0-ns">
+    <div class="fn fl-l w-60-l f5 lh-copy mt0-ns">
         {{page.content}}
     </div>
 </article>
