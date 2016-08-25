@@ -5,8 +5,28 @@ title: Home
 
 <!-- Show last 5 posts here -->
 {% for page in paginator.posts %}
+{% assign post = page %}
+{% assign category = site.my_categories | where: "slug", post.category %}
+{% assign category = category[0] %}
+{{post.category}}
+{% if category %}
+    {% capture category_content %}<a class="label bg-orange" href="{{ category.url }}" style="background-color:{{ category.color }}">{{ category.name }}</a>{% endcapture %}
+{% endif %}
+
+{% if post.tags.size > 0 %}
+    {% capture tags_content %} with <span class="icon-price-tag{% if post.tags.size > 1 %}s{% endif %}"></span>: {% endcapture %}
+    {% for post_tag in post.tags %}
+        {% assign tag = site.my_tags | where: "slug", post_tag %}
+        {% if tag %}
+            {% assign tag = tag[0] %}
+            {% capture tags_content_temp %}{{ tags_content }}<a href="{{ tag.url }}">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+            {% assign tags_content = tags_content_temp %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
     {% assign body = page.content %}
-    {% include post.html needLink=true %}
+    {% include post.html needLink=true categoryContent=category_content tagsContent=tags_content %}
 {% endfor %}
 <!--
     {% for post in paginator.posts %}
