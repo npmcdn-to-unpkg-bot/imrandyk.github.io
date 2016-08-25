@@ -8,7 +8,7 @@ title: Home
 {% assign post = page %}
 {% assign category = site.my_categories | where: "slug", post.category %}
 {% assign category = category[0] %}
-{{post.category}}
+
 {% if category %}
     {% capture category_content %}<a class="label bg-orange" href="{{ category.url }}" style="background-color:{{ category.color }}">{{ category.name }}</a>{% endcapture %}
 {% endif %}
