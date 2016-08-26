@@ -2,9 +2,11 @@
 layout: default
 title: Home
 ---
-{% for album in site.music limit:3 %}
+{% for cat in site.my_categories %}
       <span>
-        {{ album.title }}
+        {{ cat.slug }}
+        {{ cat.name }}
+        {{ cat.color }}
       </span>
 {% endfor %}
 
