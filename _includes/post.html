@@ -1,1 +1,23 @@
-
+<article class="w-100 bb b--black-10 cf ph3 ph5-ns pv5">
+    <header class="fn fl-l w-40-l pr4-ns">
+        <h1 class="f2 lh-title mb3 mt0 pt3 bt bw1 b--orange normal hide-child">
+          {% if include.needLink == null %}
+            {{ page.title }}
+          {% else %}
+            <a class="link black" href="{{site.baseurl}}{{page.url}}">
+                {{ page.title }}
+                <span class="f3 child orange"><i class="fa fa-link" aria-hidden="true"></i></span>
+            </a>
+          {% endif %}
+        </h1>
+        <h2 class="f3 mid-gray lh-title normal">
+            {{ page.excerpt }}
+        </h2>
+        <time class="f6 ttu tracked gray" datetime="{{post.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time><br />
+        <span class="author">{% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%}</span><br />
+        <small>Posted{% if category_content %} in </small>{{ category_content }}<small>{% endif %}{{ tags_content }}</small>
+    </header>
+    <div class="fn fl-l w-60-l f5 lh-copy mt0-ns">
+        {{page.content}}
+    </div>
+</article>
