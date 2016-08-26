@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 {% for cat in site.my_categories %}
-      <span>
+      <span style="background-color:{{ cat.color }};">
         {{ cat.slug }}
         {{ cat.name }}
         {{ cat.color }}
