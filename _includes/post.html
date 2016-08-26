@@ -1,3 +1,15 @@
+{% for cat in site.my_categories %}
+      <span style="background-color:{{ cat.color }};">
+        {{ cat.slug }}
+        {{ cat.name }}
+        {{ cat.color }}
+      </span>
+{% endfor %}
+
+{% assign category = site.my_categories | where: "slug", post.category %}
+{{ category }}
+
+
 <article class="w-100 bb b--black-10 cf ph3 ph5-ns pv5">
     <header class="fn fl-l w-40-l pr4-ns">
         <h1 class="f2 lh-title mb3 mt0 pt3 bt bw1 b--orange normal hide-child">
