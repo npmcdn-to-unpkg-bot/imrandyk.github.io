@@ -10,6 +10,41 @@ author: Randy Keyes
 # Your email if you want it to be linked on the contact page
 author_email: imrandyk@gmail.com
 
+# Where things are
+collections:
+  my_categories:
+    output: true
+    permalink: /blog/category/:name/
+  my_tags:
+    output: true
+permalink: /blog/tag/:name/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+      type: my_categories
+    values:
+      layout: blog_by_category
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: blog_by_tag
+
 # The directory for category index pages. Change it to something else if
 # for example you want links like /categories/category1 instead of /category1
 category_dir: /
