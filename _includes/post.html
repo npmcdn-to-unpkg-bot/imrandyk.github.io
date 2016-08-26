@@ -2,9 +2,6 @@
 {% assign post = page %}
 {% capture post_subtitle %}<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b. %d, %Y' }}</time>{% endcapture %}
 
-{% include title_header.html title=post.title subtitle=post_subtitle %}
-
-
 <div class="m-t-3 text-justify">
   {{ content }}
 
