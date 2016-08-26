@@ -12,9 +12,8 @@ author_email: imrandyk@gmail.com
 
 # Where things are
 collections:
-  my_categories:
+  music:
     output: true
-    permalink: /blog/category/:name/
 
 # The directory for category index pages. Change it to something else if
 # for example you want links like /categories/category1 instead of /category1
