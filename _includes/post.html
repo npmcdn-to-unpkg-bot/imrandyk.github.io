@@ -1,3 +1,4 @@
+test
 {% for cat in site.my_categories %}
       <span style="background-color:{{ cat.color }};">
         {{ cat.slug }}
@@ -5,7 +6,7 @@
         {{ cat.color }}
       </span>
 {% endfor %}
-
+test
 {% assign category = site.my_categories | where: "slug", post.category %}
 {{ category }}
 
