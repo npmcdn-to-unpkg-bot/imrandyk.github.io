@@ -2,7 +2,12 @@
 layout: default
 title: Home
 ---
-{{ site.my_categories }}
+{% for album in site.music limit:3 %}
+      <span>
+        {{ album.title }}
+      </span>
+{% endfor %}
+
 <!-- Show last 5 posts here -->
 {% for page in paginator.posts %}
     {% assign body = page.content %}
