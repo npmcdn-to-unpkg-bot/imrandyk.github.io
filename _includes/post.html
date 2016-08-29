@@ -9,6 +9,7 @@
 {% endfor %}
 
 {% assign cat = site.my_categories | where: "slug", page.category %}
+{% assign cat = cat[0] %}
 slug: {{ cat.slug }} <br>
 name: {{ cat.name }} <br />
 color: {{ cat.color }} <br />
