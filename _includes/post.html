@@ -1,18 +1,18 @@
 {% for cat in site.my_categories %}
     {% if cat.slug == page.category  %}
-        <span style="background-color:{{ cat.color }};">
-        {{ cat.slug }}
-        {{ cat.name }}
-        {{ cat.color }}
-        </span>
+        <div style="background-color:{{ cat.color }};">
+            slug: {{ category.slug }} <br />
+            name: {{ category.name }} <br />
+            color: {{ category.color }} <br />
+        </div>
     {% endif %}
 {% endfor %}
 
 {% assign category = site.my_categories | where: "slug", page.category %}
-{{ category.slug }}
-{{ category.name }}
-{{ category.color }}
-Cat: {{ page.category }}
+slug: {{ category.slug }} <br>
+name: {{ category.name }} <br />
+color: {{ category.color }} <br />
+Cat: {{ page.category }} <br />
 
 <article class="w-100 bb b--black-10 cf ph3 ph5-ns pv5">
     <header class="fn fl-l w-40-l pr4-ns">
