@@ -3,6 +3,7 @@ layout: post
 title: Guest Posts
 category: meta
 author: John Smith
+tags: [one, two, three]
 
 excerpt: How to quickly create guest blogs with a different author. 
 

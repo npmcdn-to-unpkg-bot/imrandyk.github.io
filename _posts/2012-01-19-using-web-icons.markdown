@@ -2,6 +2,7 @@
 layout: post
 title: Using the Web Icons
 category: design
+tags: [one, two, three]
 
 excerpt: Quick overview on how to use the Typicon web font icons included with this template. 
 
