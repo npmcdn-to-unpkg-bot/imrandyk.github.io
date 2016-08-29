@@ -1,9 +1,9 @@
 {% for cat in site.my_categories %}
     {% if cat.slug == page.category  %}
         <div style="background-color:{{ cat.color }};">
-            {{ category.slug }} <br />
-            name: {{ category.name }} <br />
-            color: {{ category.color }} <br />
+            slug: {{ cat.slug }} <br />
+            name: {{ cat.name }} <br />
+            color: {{ cat.color }} <br />
         </div>
     {% endif %}
 {% endfor %}
