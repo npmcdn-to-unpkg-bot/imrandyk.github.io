@@ -8,5 +8,5 @@ $(document).ready(function()//When the dom is ready or just add it if you alread
 });
 
 function setNavBg() {
-   return messages[Math.floor(Math.random() * messages.length)];
+   return colors[Math.floor(Math.random() * colors.length)];
 }
