@@ -5,7 +5,7 @@ $(document).ready(function()//When the dom is ready or just add it if you alread
     var bg = setNavBg();
     console.log(bg);
     $("nav").css("background-color", bg);
-    $("#cover").fadeOut();
+    $("#cover").delay(400).fadeOut("slow");
 });
 
 function setNavBg() {
