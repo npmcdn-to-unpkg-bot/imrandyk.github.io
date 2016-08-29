@@ -8,10 +8,10 @@
     {% endif %}
 {% endfor %}
 
-{% assign category = site.my_categories | where: "slug", page.category %}
-slug: {{ category.slug }} <br>
-name: {{ category.name }} <br />
-color: {{ category.color }} <br />
+{% assign cat = site.my_categories | where: "slug", page.category %}
+slug: {{ cat.slug }} <br>
+name: {{ cat.name }} <br />
+color: {{ cat.color }} <br />
 Cat: {{ page.category }} <br />
 
 <article class="w-100 bb b--black-10 cf ph3 ph5-ns pv5">
