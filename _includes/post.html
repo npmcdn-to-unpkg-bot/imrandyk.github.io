@@ -1,9 +1,11 @@
 {% for cat in site.my_categories %}
-      <span style="background-color:{{ cat.color }};">
+    {% if cat.slug == page.category  %}
+        <span style="background-color:{{ cat.color }};">
         {{ cat.slug }}
         {{ cat.name }}
         {{ cat.color }}
-      </span>
+        </span>
+    {% endif %}
 {% endfor %}
 
 {% assign category = site.my_categories | where: "slug", page.category %}
