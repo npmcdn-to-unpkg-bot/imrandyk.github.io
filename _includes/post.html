@@ -6,7 +6,7 @@
       </span>
 {% endfor %}
 
-{% assign category = site.my_categories | where: "slug", post.category %}
+{% assign category = site.my_categories | where: "slug", page.category %}
 {{ category }}
 Cat: {{ page.category }}
 
