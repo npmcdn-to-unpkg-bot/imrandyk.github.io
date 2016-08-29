@@ -2,13 +2,6 @@
 layout: default
 title: Home
 ---
-{% for cat in site.my_categories %}
-      <span style="background-color:{{ cat.color }};">
-        {{ cat.slug }}
-        {{ cat.name }}
-        {{ cat.color }}
-      </span>
-{% endfor %}
 
 <!-- Show last 5 posts here -->
 {% for page in paginator.posts %}
